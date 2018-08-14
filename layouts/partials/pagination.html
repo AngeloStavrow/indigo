@@ -1,0 +1,23 @@
+<nav>
+    <div id="pagination">
+        <div class="pagination-item-spacer">&nbsp;</div>
+        {{if .HasPrev}}
+            <div class="pagination-item">
+                <a alt="Newer articles" href="{{ .Prev.URL }}">&larr; Newer</a>
+            </div>
+        {{ else }}
+            <div class="pagination-item-spacer">&nbsp;</div>
+        {{end}}
+        <div class="pagination-item-spacer">
+            Page {{ .PageNumber }} of {{ .TotalPages }}
+        </div>
+        {{if .HasNext}}
+            <div class="pagination-item">
+                <a alt="Older articles" href="{{ .Next.URL }}">Older &rarr;</a>
+            </div>
+        {{ else }}
+            <div class="pagination-item-spacer">&nbsp;</div>
+        {{end}}
+        <div class="pagination-item-spacer">&nbsp;</div>
+    </div>
+</nav>

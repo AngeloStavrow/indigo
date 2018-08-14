@@ -1,0 +1,13 @@
+<!-- Include the head/header -->
+{{ partial "header.html" . }}
+
+<!-- Content goes here -->
+{{ range $index, $page := (.Paginate (where (where .Data.Pages "Type" "post") ".Params.hidden" "!=" "true" )).Pages }}
+{{ if ne $index 0 }}
+{{ end }}
+{{ .Render "li" }}
+{{ end }}
+{{ partial "pagination.html" .Paginator }}
+
+<!-- Include the site info and footer -->
+{{ partial "footer.html" . }}

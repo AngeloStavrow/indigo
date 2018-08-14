@@ -1,0 +1,438 @@
+@import url(https://cdn.rawgit.com/AngeloStavrow/FiraCode/1.205/distr/fira_code.css);
+
+@font-face {
+    font-family: 'Charter';
+    src: url('/fonts/charter_regular-webfont.eot?') format('eot');
+    src: url('/fonts/charter_regular-webfont.woff') format('woff');
+    src: url('/fonts/charter_regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: url('/fonts/charter_bold-webfont.eot');
+    src: url('/fonts/charter_bold-webfont.woff') format('woff');
+    src: url('/fonts/charter_bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: url('/fonts/charter_italic-webfont.eot');
+    src: url('/fonts/charter_italic-webfont.woff') format('woff');
+    src: url('/fonts/charter_italic-webfont.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: url('/fonts/charter_bold_italic-webfont.eot');
+    src: url('/fonts/charter_bold_italic-webfont.woff') format('woff');
+    src: url('/fonts/charter_bold_italic-webfont.ttf') format('truetype');
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('/fonts/FiraSans-Book.eot');
+    src: url('/fonts/FiraSans-Book.woff2') format('woff2');
+    src: url('/fonts/FiraSans-Book.woff') format('woff');
+    src: url('/fonts/FiraSans-Book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('/fonts/FiraSans-Bold.eot');
+    src: url('/fonts/FiraSans-Bold.woff2') format('woff2');
+    src: url('/fonts/FiraSans-Bold.woff') format('woff');
+    src: url('/fonts/FiraSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #3f3f3f;
+    font-family: 'Charter', Fallback, serif;
+    margin: 0 auto;
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 860px) {
+    div#sitelogo {
+        margin-left: -96px;
+        position: fixed;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        max-width: 800px;
+        font-size: 1.3em;
+        width: 90%;
+    }
+
+    code, pre {
+        font-size: 0.9em;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    blockquote {
+        font-size: x-large;
+    }
+
+    div#social-icons {
+        float: right;
+        margin-right: 4px;
+        width: 312px;
+    }
+
+    .icon-24x24 {
+        float: left;
+        margin-right: 24px;
+    }
+
+    .icon-24x24:hover {
+        background-color: #f8f8f8;
+        border-top: 2px solid #0d7b76;
+        padding-top: 2px;
+    }
+
+    .last {
+        margin-right: 0;
+    }
+}
+
+/* High-DPI mobile styles */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 1em;
+        max-width: 90%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    blockquote {
+        font-size: x-large;
+    }
+
+    div#social-icons {
+        float: right;
+        margin-right: 4px;
+        width: 312px;
+    }
+
+    .icon-24x24 {
+        float: right;
+        margin-left: 24px;
+    }
+
+    .last {
+        margin-left: 0;
+    }
+}
+
+/* Low-DPI mobile styles */
+@media only screen and (max-width: 414px) {
+    body {
+        font-size: 1.2em;
+        max-width: 90%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    blockquote {
+        font-size: x-large;
+    }
+
+    div#social-icons {
+        display: flex;
+        float: none;
+        justify-content: center;
+        margin: 0 auto;
+        width: 288px;
+    }
+
+    .icon-24x24 {
+        float: none;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .last {
+        margin-right: 0px;
+    }
+}
+
+#sitelogo {
+    margin: 16px auto 0 auto;
+    width: 64px;
+}
+
+.glyph:hover {
+    background-color: #f8f8f8;
+}
+
+h1, h2, h3 {
+    font-family: 'Fira Sans', Fallback, sans-serif;
+    font-weight: bold;
+    margin-top: 2em;
+    padding-top: 0.15em;
+}
+
+a {
+    color: #0d7b76;
+}
+
+a:visited {
+    color: #3aa;
+}
+
+a:hover {
+    background-color: #0d7b76;
+    color: #eff;
+}
+
+h1.post-title {
+    border-top: 2px solid #3f3f3f;
+    font-size: 2.5em;
+}
+
+h2.list-title > a {
+    color: #0d7b76;
+}
+
+h2.list-title > a:visited {
+    color: #3aa;
+}
+
+h2.list-title > a:hover {
+    background-color: #f8f8f8;
+    color: #6cc;
+}
+
+a.read-more {
+    font-family: 'Fira Sans';
+    font-size: smaller;
+    text-transform: uppercase;
+}
+
+section.content {
+    line-height: 1.5em;
+}
+
+p.post-date {
+    background-color: #0d7b76;
+    color: #eff;
+    font-family: 'Fira Sans', Fallback, sans-serif;
+    font-size: smaller;
+    margin: 0 0 2.5em 0;
+    padding: 0.25em 0.5em;
+}
+
+a.p-author {
+    color: #eff;
+    text-decoration: none;
+}
+
+h2.list-title {
+    margin: 2em 0 0 0;
+    padding: 0;
+}
+
+p.list-post-date {
+    font-family: 'Fira Sans', Fallback, sans-serif;
+    font-size: smaller;
+    margin: 1em 0 1.5em 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#footer {
+    width: 100%;
+}
+
+.copyright {
+    font-family: 'Fira Sans', Fallback, sans-serif;
+    font-size: smaller;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.h-card {
+    display: none;
+}
+
+blockquote {
+    color: #0d7b76;
+    background-color: #eff;
+    border-left: 25px solid #0d7b76;
+    /*font-size: xx-large;*/
+    line-height: 1.25em;
+    margin: 2em auto;
+    padding: 1% 5%;
+    width: 100%;
+}
+
+code {
+    background-color: #eff;
+    color: #0d7b76;
+    font-family: 'Fira Code';
+    padding: 0.1em 0.2em 0.1em 0.2em;
+}
+
+pre {
+    background-color: #eff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.8em;
+    margin: 2em auto;
+    overflow-x: scroll;
+    padding: 1em;
+    width: 100%;
+}
+
+hr.post-underline {
+    border: 0;
+    border-top: 1px solid #ccc;
+    display: block;
+    height: 1px;
+    padding: 0;
+    margin: 2em auto;
+    width: 75%;
+}
+
+a.permalink {
+    border-radius: 100%;
+    text-decoration: none;
+}
+
+.post-tag {
+    font-family: 'Fira Sans', Fallback, sans-serif;
+    font-size: small;
+    text-transform: uppercase;
+}
+
+a.post-tag {
+    background-color: #eff;
+    border: 1px solid #6cc;
+    border-radius: 5px;
+    color: #399;
+    padding: 0.15em 0.3em 0.1em 0.3em;
+    text-decoration: none;
+}
+
+a.post-tag:hover {
+    background-color: #6cc;
+    color: #fff;
+}
+
+div#site-header {
+    border-top: 5px solid #3f3f3f;
+    border-bottom: 2px solid #3f3f3f;
+}
+
+div#site-header > h1 {
+    font-size: 2.5em;
+    line-height: 1em;
+    margin-top: 1em;
+}
+
+div#site-header > p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+div#page-nav, #pagination {
+    display: inline-block;
+    font-family: 'Fira Sans', Fallback, sans-serif;
+    font-size: smaller;
+    line-height: 1em;
+    margin: 1.5em 0 2.5em 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+div.static-page-nav-item, div.static-page-nav-item-disabled, div.static-page-nav-spacer {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+}
+
+div.static-page-nav-item > a {
+    color: #0d7b76;
+    display: block;
+    text-decoration: none;
+}
+
+div.static-page-nav-item > a:hover {
+    color: #eff;
+}
+
+div.static-page-nav-item:hover, div.pagination-item:hover {
+    background-color: #0d7b76;
+}
+
+div.static-page-nav-item-disabled > p {
+    display: block;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+div#pagination {
+    margin-bottom: 0;
+    margin-top: 3.5em;
+}
+
+div.pagination-item, div.pagination-item-spacer {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+}
+
+div.pagination-item > a {
+    color: #0d7b76;
+    display: block;
+    text-decoration: none;
+}
+
+div.pagination-item > a:hover {
+    color: #eff;
+}
+
+aside#social {
+    border-top: 2px solid #3f3f3f;
+    height: 48px;
+    margin: 5em auto 0 auto;
+    width: 100%;
+}
+
+div#social-icons {
+    height: 24px;
+    position: relative;
+    top: 20px;
+    max-width: 312px;
+}
+
+.icon-24x24 {
+    height: 24px;
+    width: 24px;
+}

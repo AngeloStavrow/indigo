@@ -1,0 +1,21 @@
+<!-- Close the 'content' div -->
+    </div>
+
+<!-- Footer content -->
+    <div id="footer">
+        {{ partial "social.html" . }}
+        <p class="copyright">
+            &copy; {{ dateFormat "2006" now }} {{ .Site.Params.CopyrightOwner }}
+        </p>
+        <p class="h-card">
+          <img class="u-photo" src="{{ .Site.BaseURL }}{{ .Site.Params.Avatar }}" />
+          <a class="p-name u-url" href="http://angelostavrow.com" rel="me">Angelo Stavrow</a>
+          <a class="u-email" href="mailto:contact@angelostavrow.com">contact@angelostavrow.com</a>, 
+          <span class="p-locality">Montreal</span>
+          <span class="p-country-name">Canada</span>
+        </p>
+    </div>
+
+<!-- Close the body/html document -->
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "head.html" . }}
+<body>
+    <div id="sitelogo">
+        <a class="glyph" alt="Home" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}/images/site-logo.svg" alt="Site Logo" height="64px" width="64px"></a>
+    </div>
+    <header>        
+        {{ partial "pagenav.html" . }}
+        <h1 class="post-title">404</h1>
+    </header>
+    <section>
+        <h2>Well, this is unexpected.</h2>
+        <p>
+            It appears that we've ended up somewhere where I don't know where we are.
+        </p>
+        <p>
+            I'm sorry about that. Would you like to <a href="{{ .Site.Home }}">go to the home page</a>?
+        </p>
+    </section>
+{{ partial "footer.html" . }}

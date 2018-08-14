@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "head.html" . }}
+<body>
+    <div id="sitelogo">
+        <a class="glyph" alt="Home" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}/images/site-logo.svg" alt="Site Logo" height="64px" width="64px"></a>
+    </div>
+    <header>        
+        {{ partial "pagenav.html" . }}
+        {{ if not .IsPage }}
+        <div id="site-header">
+            <h1>{{ .Site.Title }}</h1>
+            {{ with .Site.Params.subtitle }}
+            <p>
+              {{ . }}
+            </p>
+            {{ end }}
+        </div>
+        {{ end }}
+    </header>
+    <div id="content">

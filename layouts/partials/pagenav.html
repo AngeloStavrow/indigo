@@ -1,0 +1,61 @@
+<nav>
+    <div id="page-nav">
+        {{ if .Param "static" }}
+            <div class="static-page-nav-spacer">&nbsp;</div>
+            <div class="static-page-nav-item">
+                <a alt="Home" href="{{ .Site.BaseURL }}">Home</a>
+            </div>
+                {{ if eq .Params.Title "About this site" }}
+                <div class="static-page-nav-item-disabled">
+                    <p>About</p>
+                </div>
+                {{ else }}
+                <div class="static-page-nav-item">
+                    <a alt="About this site" href="{{ .Site.BaseURL }}/about/">About</a>
+                </div>
+                {{ end }}
+                {{ if eq .Params.Title "Now" }}
+                <div class="static-page-nav-item-disabled">
+                    <p>Now</p>
+                </div>
+                {{ else }}
+                <div class="static-page-nav-item">
+                    <a alt="What I'm doing right now" href="{{ .Site.BaseURL }}/now/">Now</a>
+                </div>
+                {{ end }}
+            <div class="static-page-nav-spacer">&nbsp;</div>
+        {{ else }}
+            {{ if .Prev }}
+                {{ if .Prev.Param "static" }}
+                <div class="static-page-nav-spacer">&nbsp;</div>
+                {{ else }}
+                <div class="static-page-nav-item">
+                    <a alt="Newer article" href="{{ .Prev.Permalink }}">&larr; Newer</a>
+                </div>
+                {{ end }}
+            {{ else }}
+            <div class="static-page-nav-spacer">&nbsp;</div>
+            {{ end }}
+            <div class="static-page-nav-item">
+                <a alt="Home" href="{{ .Site.BaseURL }}">Home</a>
+            </div>
+            <div class="static-page-nav-item">
+                <a alt="About this site" href="{{ .Site.BaseURL }}/about/">About</a>
+            </div>
+            <div class="static-page-nav-item">
+                <a alt="What I'm doing right now" href="{{ .Site.BaseURL }}/now/">Now</a>
+            </div>
+            {{ if .Next }}
+                {{ if .Next.Param "static" }}
+                <div class="static-page-nav-spacer">&nbsp;</div>
+                {{ else }}
+                <div class="static-page-nav-item">
+                    <a alt="Older article" href="{{ .Next.Permalink }}">Older &rarr;</a>
+                </div>
+                {{ end }}
+            {{ else }}
+            <div class="static-page-nav-spacer">&nbsp;</div>
+            {{ end }}
+        {{ end }}
+    </div>
+</nav>

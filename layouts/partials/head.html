@@ -1,0 +1,26 @@
+<head>
+    <meta charset="utf-8">
+    <!-- Site details -->
+    <title>{{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.Description }}">
+    <meta name="author" content="{{ .Site.Params.AuthorName }}">
+    <!-- Favicon details -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- IndieWeb identity -->
+    {{ with .Site.Params.IndieWeb.EmailAddress }}<link rel="me" href="mailto:{{ . }}">{{ end }}
+    {{ with .Site.Params.IndieWeb.GitHubUser }}<link rel="me" href="https://github.com/{{ . }}">{{ end }}
+    {{ with .Site.Params.IndieWeb.TwitterUser }}<link rel="me" href="https://twitter.com/{{ . }}">{{ end }}
+    {{ with .Site.Params.IndieWeb.MicroBlogUser }}<link rel="me" href="https://micro.blog/{{ . }}">{{ end }}
+    <!-- IndieAuth endpoint -->
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <!-- Other stuff to make the site work -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>

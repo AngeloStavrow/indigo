@@ -1,0 +1,30 @@
+{{ partial "header.html" . }}
+{{ $baseurl := .Site.BaseURL | sanitizeurl }}
+<article class="h-entry">
+    <header>
+        <h1 class="post-title p-name">{{ .Title }}</h1>
+        {{ if .Param "static" }}
+        {{ else }}
+        <p class="post-date">Posted on
+            <time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+              {{ .PublishDate.Format "2 January, 2006 at 15:04 MST" }}
+            </time> by <a href="{{ .Site.Home }}" class="p-author">{{ .Site.Params.AuthorName }}</a>
+        </p>
+        {{ end }}
+    </header>
+    <section class="content e-content">
+        {{ .Content }}
+    </section>
+    <footer>
+        <a class="permalink u-url" href="{{ .Permalink }}">⏳</a>
+        {{ if .Params.tags }}
+        <hr class="post-underline">
+        <p class="post-tag">Tags for this post: 
+        {{ range .Params.tags }}
+            <a href="{{ $baseurl }}/tags/{{ . | urlize }}" class="post-tag">{{ . }}</a>
+        {{ end }}
+        </p>
+        {{ end }}
+    </footer>
+</article>
+{{ partial "footer.html" . }}
