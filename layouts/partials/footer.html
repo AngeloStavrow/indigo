@@ -9,10 +9,10 @@
         </p>
         <p class="h-card">
           <img class="u-photo" src="{{ .Site.BaseURL }}{{ .Site.Params.Avatar }}" />
-          <a class="p-name u-url" href="http://angelostavrow.com" rel="me">Angelo Stavrow</a>
-          <a class="u-email" href="mailto:contact@angelostavrow.com">contact@angelostavrow.com</a>, 
-          <span class="p-locality">Montreal</span>
-          <span class="p-country-name">Canada</span>
+          <a class="p-name u-url" href="{{ .Site.Home }}" rel="me">{{ .Site.Params.AuthorName }}</a>
+          <a class="u-email" href="{{  }}">{{ .Site.Params.IndieWeb.EmailAddress }}</a>, 
+          <span class="p-locality">{{ .Site.Params.IndieWeb.City }}</span>
+          <span class="p-country-name">{{ .Site.Params.IndieWeb.Country }}</span>
         </p>
     </div>
 

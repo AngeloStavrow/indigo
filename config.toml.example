@@ -1,0 +1,33 @@
+languageCode = "en-US"
+theme = "indigo"
+baseURL = "https://example.com/"
+title = "Site Title"
+
+[params]
+  AuthorName = "Author Name"
+  Description = "Description of website for head meta tag"
+  Subtitle = "A subtitle for your site"
+  Avatar = "path/to/avatar.jpg"
+
+  # Copyright owner for display in the footer:
+  CopyrightOwner = "Copyright owner name"
+
+  # Contact/social-network identifiers for social icons
+  EmailAddress = "email.address@example.com"
+  FlickrUser = "FlickrUserName"
+  GitHubUser = "GitHubUserName"
+  GitLabUser = "GitLabUserName"
+  GlitchUser = "GlitchUserName"
+  TwitterUser = "TwitterUserName"
+  MicroBlogUser = "MicroBlogUserName"
+
+  # These are parameters used for indieweb identity. You should set these along
+  # with the top-level email/social network parameters.
+  [params.indieWeb]  
+    EmailAddress = "email.address@example.com"
+    FlickrUser = "FlickrUserName"
+    GitHubUser = "GitHubUserName"
+    TwitterUser = "TwitterUserName"
+    MicroBlogUser = "MicroBlogUserName"
+    Country = "CountryName"
+    City = "CityName"
