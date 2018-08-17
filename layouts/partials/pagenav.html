@@ -1,11 +1,18 @@
 <nav>
+    {{ $currentPage := . }}
     <div id="page-nav">
         <!--
             Left-most entry is a link to the next-newest article, if we're
             looking at posts, or a spacer if we're either on the home page or a
             menu-content page.
         -->
+        {{ if and (.Prev) (not .Params.Menu) }}
+        <div class="static-page-nav-item">
+            <a alt="Newer article" href="{{ .Prev.Permalink }}">&larr; Newer</a>
+        </div>
+        {{ else }}
         <div class="static-page-nav-spacer">&nbsp;</div>
+        {{ end }}
 
         <!-- Next, the menu of static content pages (e.g., about, now). -->
         <div class="static-page-nav-item">
@@ -25,7 +32,13 @@
             looking at posts, or a spacer if we're either on the home page or a
             menu-content page.
         -->
+        {{ if and (.Next) (not .Params.Menu) }}
+        <div class="static-page-nav-item">
+            <a alt="Older article" href="{{ .Next.Permalink }}">Older &rarr;</a>
+        </div>
+        {{ else }}
         <div class="static-page-nav-spacer">&nbsp;</div>
+        {{ end }}
     </div>
 </nav>
 
