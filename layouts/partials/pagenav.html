@@ -1,5 +1,36 @@
 <nav>
     <div id="page-nav">
+        <!--
+            Left-most entry is a link to the next-newest article, if we're
+            looking at posts, or a spacer if we're either on the home page or a
+            menu-content page.
+        -->
+        <div class="static-page-nav-spacer">&nbsp;</div>
+
+        <!-- Next, the menu of static content pages (e.g., about, now). -->
+        <div class="static-page-nav-item">
+            <a alt="Home" href="{{ .Site.BaseURL }}">Home</a>
+        </div>
+        {{ range .Site.Menus.main }}
+            <div class="static-page-nav-item">
+                <a href="{{ .URL }}">
+                    {{ .Pre }}
+                    <span>{{ .Name }}</span>
+                </a>
+            </div>
+        {{ end }}
+
+        <!--
+            Right-most entry is a link to the next-oldest article if we're
+            looking at posts, or a spacer if we're either on the home page or a
+            menu-content page.
+        -->
+        <div class="static-page-nav-spacer">&nbsp;</div>
+    </div>
+</nav>
+
+
+<!--
         {{ if .Param "static" }}
             <div class="static-page-nav-spacer">&nbsp;</div>
             <div class="static-page-nav-item">
@@ -59,3 +90,4 @@
         {{ end }}
     </div>
 </nav>
+-->
