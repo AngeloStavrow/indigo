@@ -8,6 +8,7 @@ title = "Site Title"
   Description = "Description of website for head meta tag"
   Subtitle = "A subtitle for your site"
   Avatar = "path/to/avatar.jpg"
+  PermalinkText = "🔗"
 
   # Copyright owner for display in the footer:
   CopyrightOwner = "Copyright owner name"

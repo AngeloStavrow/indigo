@@ -16,7 +16,7 @@
         {{ .Content }}
     </section>
     <footer>
-        <a class="permalink u-url" href="{{ .Permalink }}">⏳</a>
+        <a class="permalink u-url" href="{{ .Permalink }}">{{ .Site.Params.PermalinkText }}</a>
         {{ if .Params.tags }}
         <hr class="post-underline">
         <p class="post-tag">Tags for this post: 
