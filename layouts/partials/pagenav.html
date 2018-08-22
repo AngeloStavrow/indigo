@@ -15,9 +15,6 @@
         {{ end }}
 
         <!-- Next, the menu of static content pages (e.g., about, now). -->
-        <div class="static-page-nav-item">
-            <a alt="Home" href="{{ .Site.BaseURL }}">Home</a>
-        </div>
         {{ range .Site.Menus.main }}
             <div class="static-page-nav-item">
                 <a href="{{ .URL }}">
