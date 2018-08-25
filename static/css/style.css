@@ -391,14 +391,11 @@ div.page-nav-item > a:hover {
 
 div#pagination {
     display: inline-block;
+    margin: 3.5em 0;
 }
 
 div.pagination-item:hover {
     background-color: #00416a;
-}
-
-div#pagination {
-    margin: 3.5em 0;
 }
 
 div.pagination-item, div.pagination-item-spacer {
