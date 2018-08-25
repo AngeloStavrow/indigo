@@ -3,17 +3,38 @@
 
 <!-- Footer content -->
     <div id="footer">
-        {{ partial "social.html" . }}
-        <p class="copyright">
-            &copy; {{ dateFormat "2006" now }} {{ .Site.Params.CopyrightOwner }}
-        </p>
-        <p class="h-card">
-          <img class="u-photo" src="{{ .Site.BaseURL }}{{ .Site.Params.Avatar }}" />
-          <a class="p-name u-url" href="{{ .Site.Home }}" rel="me">{{ .Site.Params.AuthorName }}</a>
-          <a class="u-email" href="mailto:{{ .Site.Params.IndieWeb.EmailAddress }}">{{ .Site.Params.IndieWeb.EmailAddress }}</a>, 
-          <span class="p-locality">{{ .Site.Params.IndieWeb.City }}</span>
-          <span class="p-country-name">{{ .Site.Params.IndieWeb.Country }}</span>
-        </p>
+      {{ if or (.Prev) (.Next) }}
+      <nav id="article-skip">
+        <div class="prev">
+          {{ if and (.Prev) (not .Params.Menu) }}
+          <a alt="Newer article" href="{{ .Prev.Permalink }}">&larr; Newer</a>
+          {{ else }}
+          <p>&nbsp;</p>
+          {{ end }}
+        </div>
+        <div class="top">
+          <a alt="Top of page" href="#">Top</a>
+        </div>
+        <div class="next">
+          {{ if and (.Next) (not .Params.Menu) }}
+          <a alt="Older article" href="{{ .Next.Permalink }}">Older &rarr;</a>
+          {{ else }}
+          <p>&nbsp;</p>
+          {{ end }}
+        </div>
+      </nav>
+      {{ end }}
+      {{ partial "social.html" . }}
+      <p class="copyright">
+          &copy; {{ dateFormat "2006" now }} {{ .Site.Params.CopyrightOwner }}
+      </p>
+      <p class="h-card">
+        <img class="u-photo" src="{{ .Site.BaseURL }}{{ .Site.Params.Avatar }}" />
+        <a class="p-name u-url" href="{{ .Site.Home }}" rel="me">{{ .Site.Params.AuthorName }}</a>
+        <a class="u-email" href="mailto:{{ .Site.Params.IndieWeb.EmailAddress }}">{{ .Site.Params.IndieWeb.EmailAddress }}</a>, 
+        <span class="p-locality">{{ .Site.Params.IndieWeb.City }}</span>
+        <span class="p-country-name">{{ .Site.Params.IndieWeb.Country }}</span>
+      </p>
     </div>
 
 <!-- Close the body/html document -->

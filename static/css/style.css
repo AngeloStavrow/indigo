@@ -353,7 +353,6 @@ div#site-header > p {
 }
 
 div#page-nav, #pagination {
-    display: inline-block;
     font-family: 'Fira Sans', Fallback, sans-serif;
     font-size: smaller;
     line-height: 1em;
@@ -364,39 +363,42 @@ div#page-nav, #pagination {
     width: 100%;
 }
 
-div.static-page-nav-item, div.static-page-nav-item-disabled, div.static-page-nav-spacer {
-    display: inline-block;
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 20%;
+#page-nav {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
-div.static-page-nav-item > a {
+div.page-nav-item, div.page-nav-spacer {
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0;
+}
+
+div.page-nav-item > a {
     color: #00416a;
     display: block;
     text-decoration: none;
+    width: 100%;
 }
 
-div.static-page-nav-item > a:hover {
+div.page-nav-item > a:hover {
+    background-color: #00416a;
     color: #dee5e9;
 }
 
-div.static-page-nav-item:hover, div.pagination-item:hover {
+div#pagination {
+    display: inline-block;
+}
+
+div.pagination-item:hover {
     background-color: #00416a;
 }
 
-div.static-page-nav-item-disabled > p {
-    display: block;
-    font-weight: bold;
-    line-height: 1em;
-    margin: 0;
-    padding: 0;
-}
-
 div#pagination {
-    margin-bottom: 0;
-    margin-top: 3.5em;
+    margin: 3.5em 0;
 }
 
 div.pagination-item, div.pagination-item-spacer {
@@ -420,7 +422,7 @@ div.pagination-item > a:hover {
 aside#social {
     border-top: 2px solid #3f3f3f;
     height: 48px;
-    margin: 5em auto 0 auto;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -434,4 +436,61 @@ div#social-icons {
 .icon-24x24 {
     height: 24px;
     width: 24px;
+}
+
+nav#article-skip {
+    align-items: flex-start;
+    border-top: 1px solid #dee5e9;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-family: 'Fira Sans', Fallback, sans-serif;
+    font-size: smaller;
+    justify-content: space-around;
+    line-height: 1em;
+    margin: 5em 0 0 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.next, .prev, .top {
+    flex: 0 1 auto;
+    margin: 0;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.next {
+    text-align: right;
+}
+
+.prev {
+    text-align: left;
+}
+
+.top {
+    border-left: 1px solid #dee5e9;
+    border-right: 1px solid #dee5e9;
+}
+
+div.next > p,
+div.prev > p {
+    margin: 0;
+    padding: 0;
+}
+
+div.next > a,
+div.prev > a,
+div.top > a {
+    color: #00416a;
+    text-decoration: none;
+}
+
+
+div.next > a:hover,
+div.prev > a:hover,
+div.top > a:hover {
+    background-color: #00416a;
+    color: #dee5e9;
 }
