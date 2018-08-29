@@ -15,12 +15,16 @@ title = "Site Title"
 
   # Contact/social-network identifiers for social icons
   EmailAddress = "email.address@example.com"
+  FacebookUser = "FacebookUserName"
   FlickrUser = "FlickrUserName"
   GitHubUser = "GitHubUserName"
   GitLabUser = "GitLabUserName"
   GlitchUser = "GlitchUserName"
-  TwitterUser = "TwitterUserName"
+  KeybaseUser = "KeybaseUserName"
   MicroBlogUser = "MicroBlogUserName"
+  StackOverflowUser = "StackOverflowUserName"
+  TumblrUser = "TumblrUserName"
+  TwitterUser = "TwitterUserName"
 
   # These are parameters used for indieweb identity. You should set these along
   # with the top-level email/social network parameters.
