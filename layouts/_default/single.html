@@ -21,7 +21,7 @@
         <hr class="post-underline">
         <p class="post-tag">Tags for this post: 
         {{ range .Params.tags }}
-            <a href="{{ $baseurl }}/tags/{{ . | urlize }}" class="post-tag">{{ . }}</a>
+            <a href="{{ $baseurl }}/tags/{{ . | urlize }}" class="post-tag p-category">{{ . }}</a>
         {{ end }}
         </p>
         {{ end }}
