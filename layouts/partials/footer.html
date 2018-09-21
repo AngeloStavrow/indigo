@@ -25,9 +25,11 @@
       </nav>
       {{ end }}
       {{ partial "social.html" . }}
+      {{ with .Site.Copyright }}
       <p class="copyright">
-          &copy; {{ dateFormat "2006" now }} {{ .Site.Params.CopyrightOwner }}
+          {{ . }}
       </p>
+      {{ end }}
       <p class="h-card">
         <img class="u-photo" src="{{ .Site.BaseURL }}{{ .Site.Params.Avatar }}" />
         <a class="p-name u-url" href="{{ .Site.BaseURL }}" rel="me">{{ .Site.Params.AuthorName }}</a>

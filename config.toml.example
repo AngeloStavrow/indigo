@@ -1,17 +1,15 @@
-languageCode = "en-US"
-theme = "indigo"
 baseURL = "https://example.com/"
 title = "Site Title"
+copyright = "Copyright © 2018, Copyright Owner Name"
+languageCode = "en-US"
+theme = "indigo"
 
 [params]
-  AuthorName = "Author Name"
+  Author = "Site Author Name"
   Description = "Description of website for head meta tag"
   Subtitle = "A subtitle for your site"
   Avatar = "path/to/avatar.jpg"
   PermalinkText = "🔗"
-
-  # Copyright owner for display in the footer:
-  CopyrightOwner = "Copyright owner name"
 
   # Contact/social-network identifiers for social icons
   EmailAddress = "email.address@example.com"

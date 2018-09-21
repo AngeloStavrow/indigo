@@ -1,12 +1,16 @@
 {{ partial "header.html" . }}
 {{ $baseurl := .Site.BaseURL | sanitizeurl }}
+{{ $author := .Site.Params.Author }}
+{{ if .Params.Author }}
+    {{ $author = .Params.Author }}
+{{ end }}
 <article class="h-entry">
     <header>
         <h1 class="post-title p-name">{{ .Title }}</h1>
         <p class="post-date">Posted on
             <time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
               {{ .PublishDate.Format "2 January, 2006 at 15:04 MST" }}
-            </time> {{ if .Params.Author }} by <a href="{{ .Site.BaseURL }}" class="p-author h-card" rel="author">{{ . }}</a>{{ end }}
+            </time> {{ if $author }} by <a href="{{ .Site.BaseURL }}" class="p-author h-card" rel="author">{{ $author }}</a>{{ end }}
         </p>
         {{ if .Params.categories }}
         <p class="post-tag">Category: 
