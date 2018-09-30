@@ -4,15 +4,15 @@
 name = "Indigo"
 license = "MIT"
 licenselink = "https://github.com/AngeloStavrow/indigo/blob/master/LICENSE.md"
-description = "An IndieWeb-enabled, lightweight theme for Hugo."
+description = "An IndieWeb-enabled, lightweight blogging theme for Hugo."
 homepage = "https://github.com/AngeloStavrow/indigo"
 tags = ["blog", "responsive", "minimal"]
 features = ["indieweb", "blog"]
-min_version = "0.38"
+min_version = "0.48"
 
 [author]
   name = "Angelo Stavrow"
-  homepage = "http://angelostavrow.com/"
+  homepage = "https://angelostavrow.com/"
 
 # If porting an existing theme
 [original]

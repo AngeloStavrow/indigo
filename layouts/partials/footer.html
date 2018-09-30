@@ -2,6 +2,20 @@
     </div>
 
 <!-- Footer content -->
+    {{ if .Site.Params.ShowBio }}
+    <div class="h-card">
+      <img class="u-photo" src="{{ .Site.BaseURL }}{{ .Site.Params.Avatar }}" />
+      <div class="card-content">
+        <h2 class="card-name"><a class="p-name u-url" href="{{ .Site.BaseURL }}" rel="me">{{ .Site.Params.Author }}</a></h2>
+        <p class="card-subhead">
+          <span class="p-locality">{{ .Site.Params.IndieWeb.City }}</span>,
+          <span class="p-country-name">{{ .Site.Params.IndieWeb.Country }}</span><br />
+          <a class="u-email" href="mailto:{{ .Site.Params.IndieWeb.EmailAddress }}">Email me</a>
+        </p>
+      </div>
+      <p class="p-note">{{ .Site.Params.Biography }}</p>
+    </div>
+    {{ end }}
     <div id="footer">
       {{ if or (.Prev) (.Next) }}
       <nav id="article-skip">
@@ -30,13 +44,6 @@
           {{ . }}
       </p>
       {{ end }}
-      <p class="h-card">
-        <img class="u-photo" src="{{ .Site.BaseURL }}{{ .Site.Params.Avatar }}" />
-        <a class="p-name u-url" href="{{ .Site.BaseURL }}" rel="me">{{ .Site.Params.AuthorName }}</a>
-        <a class="u-email" href="mailto:{{ .Site.Params.IndieWeb.EmailAddress }}">{{ .Site.Params.IndieWeb.EmailAddress }}</a>, 
-        <span class="p-locality">{{ .Site.Params.IndieWeb.City }}</span>
-        <span class="p-country-name">{{ .Site.Params.IndieWeb.Country }}</span>
-      </p>
     </div>
 
 <!-- Close the body/html document -->

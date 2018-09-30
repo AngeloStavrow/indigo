@@ -92,6 +92,10 @@ body {
         border-top: 2px solid #00416a;
         padding-top: 2px;
     }
+
+    .card-content {
+        margin-left: 25px;
+    }
 }
 
 /* High-DPI mobile styles */
@@ -108,6 +112,10 @@ body {
     blockquote {
         font-size: x-large;
     }
+    
+    .card-content {
+        margin-left: 25px;
+    }
 }
 
 /* Low-DPI mobile styles */
@@ -123,6 +131,10 @@ body {
 
     blockquote {
         font-size: x-large;
+    }
+
+    .card-content {
+        margin-left: 0;
     }
 }
 
@@ -221,8 +233,30 @@ p.list-post-date {
     text-align: center;
 }
 
-p.h-card {
-    display: none;
+div.h-card {
+    box-shadow: 0 5px 5px #ccc;
+    margin: 1em auto;
+    min-height: 150px;
+    padding: 25px;
+    width: 90%
+}
+
+img.u-photo {
+    width: 100px;
+}
+
+.card-content {
+    display: inline-block;
+}
+
+.card-name {
+    margin: 0;
+}
+
+.card-subhead {
+    font-family: 'Fira Sans';
+    font-size: smaller;
+    text-transform: uppercase;
 }
 
 blockquote {
