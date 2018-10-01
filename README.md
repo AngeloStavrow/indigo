@@ -67,3 +67,5 @@ The following open fonts are used in this theme:
 * [Fira Code](https://github.com/tonsky/FiraCode) for monospaced text
 
 Licenses are included in the theme’s `static/fonts` folder.
+
+Most icons in the social footer are from [Font Awesome](https://fontawesome.com/). Some come directly from the service itself (e.g., Micro.blog and Glitch).
