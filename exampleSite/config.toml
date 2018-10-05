@@ -1,6 +1,6 @@
 baseURL = "https://example.com/"
 title = "Indigo Theme"
-copyright = "Copyright © 2018, Angelo Stavrow"
+copyright = "Copyright © 2018, Author Name"
 languageCode = "en-US"
 theme = "../.."
 paginate = 3
