@@ -12,4 +12,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - The first public release of the indigo theme for Hugo, along with related project documentation (including this changelog).
 
-[1.0.1]: https://github.com/AngeloStavrow/indigo/compare/v1.0.0...v1.0.1
+[1.0.1]: https://github.com/AngeloStavrow/indigo/compare/v1.0...v1.0.1
