@@ -55,5 +55,12 @@
       <a class="glyph" alt="Twitter profile" href="https://twitter.com/{{ . }}"><img src="/icons/twitter.svg" height="24px" width="24px"></a>
      </div>
      {{ end }}
+    {{ if isset .Site.Params "reddituser" }}
+    <div class="icon-24x24">
+      <a class="glyph" alt="Reddit profile" href="https://www.reddit.com/user/{{ .Site.Params.RedditUser }}">
+	<img src="{{ .Site.BaseURL }}icons/reddit-alien.svg" height="24px" width="24px" />
+      </a>
+    </div>
+    {{ end }}
   </div>
 </aside>
