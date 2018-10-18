@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Fixed
 - The 404.html page now properly links back to the homepage, thanks to @sauerj!
+- Custom fonts are now loaded correctly, hopefully speeding up rendering ([#23](https://github.com/AngeloStavrow/indigo/issues/23))
 
 ## [1.0.2]
 ### Fixed
