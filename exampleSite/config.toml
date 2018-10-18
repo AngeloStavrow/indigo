@@ -23,6 +23,7 @@ paginate = 3
   GlitchUser = "GlitchUserName"
   KeybaseUser = "KeybaseUserName"
   MicroBlogUser = "MicroBlogUserName"
+  RedditUser = "RedditUserName"
   StackOverflowUser = "StackOverflowUserName"
   TumblrUser = "TumblrUserName"
   TwitterUser = "TwitterUserName"
