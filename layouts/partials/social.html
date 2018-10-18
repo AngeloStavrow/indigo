@@ -40,6 +40,13 @@
       <a class="glyph" alt="Micro.Blog profile" href="https://micro.blog/{{ . }}"><img src="/icons/microblog.svg" height="24px" width="24px"></a>
     </div>
     {{ end }}
+    {{ with .Site.Params.RedditUser }}
+    <div class="icon-24x24">
+      <a class="glyph" alt="Reddit profile" href="https://www.reddit.com/user/{{ . }}">
+	<img src="/icons/reddit-alien.svg" height="24px" width="24px" />
+      </a>
+    </div>
+    {{ end }}
     {{ with .Site.Params.StackOverflowUser }}
     <div class="icon-24x24">
       <a class="glyph" alt="Stack Overflow profile" href="https://stackoverflow.com/users/{{ . }}"><img src="/icons/stack-overflow.svg" height="24px" width="24px"></a>
