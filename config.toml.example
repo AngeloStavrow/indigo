@@ -22,10 +22,10 @@ theme = "indigo"
   GlitchUser = "GlitchUserName"
   KeybaseUser = "KeybaseUserName"
   MicroBlogUser = "MicroBlogUserName"
+  RedditUser = "RedditUserName"
   StackOverflowUser = "StackOverflowUserName"
   TumblrUser = "TumblrUserName"
   TwitterUser = "TwitterUserName"
-  RedditUser = "RedditUserName"
 
   # These are parameters used for indieweb identity. You should set these along
   # with the above email/social network parameters.
