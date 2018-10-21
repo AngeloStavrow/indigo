@@ -20,6 +20,7 @@
     <!-- IndieAuth endpoint -->
     <link rel="authorization_endpoint" href="https://indieauth.com/auth">
     <!-- Other stuff to make the site work -->
+    <style type="text/css">{{ partial "fonts.css" . | safeCSS }}</style>
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
