@@ -34,7 +34,13 @@ You can configure the theme to show info about the author; by default, this info
 
 ## Deployment
 
-You can add a line to your **config.toml** file to set this theme as the default:
+You can add a line to your `config.toml` file to set this theme as the default:
+
+```
+theme = "indigo"
+```
+
+Or, if you use `config.yaml`:
 
 ```
 theme: indigo
