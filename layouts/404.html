@@ -9,10 +9,12 @@
         {{ partial "pagenav.html" . }}
         <h1 class="post-title">404</h1>
     </header>
-    <section>
-        <h2>Whoops.</h2>
-        <p>
-            The page you were looking for doesn't exist. Would you like to <a href="{{ .Site.BaseURL }}">go to the home page</a>?
-        </p>
-    </section>
+    <div id="content">
+        <section>
+            <h2>Whoops.</h2>
+            <p>
+                The page you were looking for doesn't exist. Would you like to <a href="{{ .Site.BaseURL }}">go to the home page</a>?
+            </p>
+        </section>
+    </div>
 {{ partial "footer.html" . }}
