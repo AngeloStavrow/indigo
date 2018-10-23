@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Clearer process for contributing to the project ([#28](https://github.com/AngeloStavrow/indigo/issues/28))
+
 ### Fixed
 - Better instructions for users that prefer a little more YAML in their lives, thanks to [@zwbetz-gh](https://github.com/zwbetz-gh)!
 
