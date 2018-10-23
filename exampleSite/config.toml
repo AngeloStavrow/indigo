@@ -2,7 +2,7 @@ baseURL = "https://example.com/"
 title = "Indigo Theme"
 copyright = "Copyright © 2018, Author Name"
 languageCode = "en-US"
-theme = "../.." # Switch back to "indigo"
+theme = "indigo"
 paginate = 3
 
 [params]
