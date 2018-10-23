@@ -1,9 +1,3 @@
----
-name: Pull Request
-about: Submit changes to help us improve
-
----
-
 **Related Issue**
 This PR's content was first discussed in issue #
 
