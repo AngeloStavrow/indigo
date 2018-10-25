@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Better instructions for users that prefer a little more YAML in their lives, thanks to [@zwbetz-gh](https://github.com/zwbetz-gh)!
+- The `src` URL for the site logo had an extra `/`, and now it doesn't, thanks to [@michimani](https://github.com/michimani)!
 
 ## [1.0.3]
 ### Added
