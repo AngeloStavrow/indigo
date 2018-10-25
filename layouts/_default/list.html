@@ -1,8 +1,10 @@
 {{ partial "header.html" . }}
 <h2>{{ .Title }}</h2>
+<div id="content">
 {{ range $index, $page := (.Paginate (where .Data.Pages "Type" "post")).Pages }}
 {{ if ne $index 0 }}
 {{ end }}
 {{ .Render "li" }}
 {{ end }}
+</div>
 {{ partial "footer.html" . }}
