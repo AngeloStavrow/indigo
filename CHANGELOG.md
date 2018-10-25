@@ -5,9 +5,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Users can now add their Medium and LinkedIn accounts as social networks, thanks to [@RicardoBelchior](https://github.com/RicardoBelchior)
+
+### Changed
+- Clearer process for contributing to the project ([#28](https://github.com/AngeloStavrow/indigo/issues/28))
+
 ### Fixed
 - Better instructions for users that prefer a little more YAML in their lives, thanks to [@zwbetz-gh](https://github.com/zwbetz-gh)!
 - Fix for broken content div in 404.html ([#21](https://github.com/AngeloStavrow/indigo/issues/21))
+- The `src` URL for the site logo had an extra `/`, and now it doesn't, thanks to [@michimani](https://github.com/michimani)!
 
 ## [1.0.3]
 ### Added

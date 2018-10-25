@@ -35,6 +35,16 @@
       <a class="glyph" alt="Keybase profile" href="https://keybase.io/{{ .Site.Params.KeybaseUser }}"><img src="{{ .Site.BaseURL }}icons/keybase.svg" height="24px" width="24px"></a>
     </div>
     {{ end }}
+    {{ if isset .Site.Params "linkedinuser" }}
+    <div class="icon-24x24">
+      <a class="glyph" alt="LinkedIn profile" href="https://www.linkedin.com/in/{{ .Site.Params.LinkedInUser }}"><img src="{{ .Site.BaseURL }}icons/linkedin.svg" height="24px" width="24px"></a>
+    </div>
+    {{ end }}
+    {{ if isset .Site.Params "mediumuser" }}
+    <div class="icon-24x24">
+      <a class="glyph" alt="Medium profile" href="https://medium.com/{{ .Site.Params.MediumUser }}"><img src="{{ .Site.BaseURL }}icons/medium.svg" height="24px" width="24px"></a>
+    </div>
+    {{ end }}
     {{ if isset .Site.Params "microbloguser" }}
     <div class="icon-24x24">
       <a class="glyph" alt="Micro.Blog profile" href="https://micro.blog/{{ .Site.Params.MicroBlogUser }}"><img src="{{ .Site.BaseURL }}icons/microblog.svg" height="24px" width="24px"></a>
