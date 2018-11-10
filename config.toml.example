@@ -39,3 +39,13 @@ theme = "indigo"
     MicroBlogUser = "MicroBlogUserName"
     Country = "CountryName"
     City = "CityName"
+  [params.endpoints]
+  Auth = "https://indieauth.com/auth"
+  # To get webmention support, just register at webmention.io and paste the link for endpoint here.
+  #Webmention = "https://webmention.io/<yourusername>/webmention"
+  # To get micropub support, you'll need to install a Micropub endpoint at your site and put its link there.
+  # To get an endpoint with Hugo support, use nanopub: https://github.com/dg01d/nanopub
+  # It will probably require some PHP hackery though, as it's fairly basic.
+  #Micropub = ""
+  # To get microsub support, you can use Aperture from p3k. Either go to https://aperture.p3k.io or self-host it (it's open source!)
+  #Microsub = ""
