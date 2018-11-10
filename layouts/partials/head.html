@@ -18,7 +18,10 @@
     {{ with .Site.Params.IndieWeb.TwitterUser }}<link rel="me" href="https://twitter.com/{{ . }}">{{ end }}
     {{ with .Site.Params.IndieWeb.MicroBlogUser }}<link rel="me" href="https://micro.blog/{{ . }}">{{ end }}
     <!-- IndieAuth endpoint -->
-    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    {{ with .Site.Params.Endpoints.Auth }}<link rel="authorization_endpoint" href="{{ . }}">{{ end }}
+    {{ with .Site.Params.Endpoints.Webmention }}<link rel="webmention" href="{{ . }}">{{ end }}
+    {{ with .Site.Params.Endpoints.Microsub }}<link rel="microsub" href="{{ . }}">{{ end }}
+    {{ with .Site.Params.Endpoints.Micropub }}<link rel="micropub" href="{{ . }}">{{ end }}
     <!-- Other stuff to make the site work -->
     <style type="text/css">{{ partial "fonts.css" . | safeCSS }}</style>
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" />
