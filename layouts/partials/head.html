@@ -23,6 +23,11 @@
     {{ with .Site.Params.Endpoints.Microsub }}<link rel="microsub" href="{{ . }}">{{ end }}
     {{ with .Site.Params.Endpoints.Micropub }}<link rel="micropub" href="{{ . }}">{{ end }}
     <!-- Other stuff to make the site work -->
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+            crossorigin="anonymous"
+    />
     <style type="text/css">{{ partial "fonts.css" . | safeCSS }}</style>
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
