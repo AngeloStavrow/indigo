@@ -54,4 +54,4 @@ The following classes are used to mark up the author bio for [IndieWeb][indieweb
 
 *Author URL is set to the site's base URL.
 
-[indieweb]: https://indieweb.org/
+[indieweb]: https://indieweb.org
