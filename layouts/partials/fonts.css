@@ -7,7 +7,7 @@
          url('{{ .Site.BaseURL }}fonts/FiraCode-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face {
@@ -16,7 +16,7 @@
     src: url('{{ .Site.BaseURL }}fonts/charter_regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('{{ .Site.BaseURL }}fonts/charter_regular-webfont.woff') format('woff'),
          url('{{ .Site.BaseURL }}fonts/charter_regular-webfont.ttf') format('truetype');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face {
@@ -26,7 +26,7 @@
          url('{{ .Site.BaseURL }}fonts/charter_bold-webfont.woff') format('woff'),
          url('{{ .Site.BaseURL }}fonts/charter_bold-webfont.ttf') format('truetype');
     font-weight: bold;
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face {
@@ -36,7 +36,7 @@
          url('{{ .Site.BaseURL }}fonts/charter_italic-webfont.woff') format('woff'),
          url('{{ .Site.BaseURL }}fonts/charter_italic-webfont.ttf') format('truetype');
     font-style: italic;
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face {
@@ -47,7 +47,7 @@
          url('{{ .Site.BaseURL }}fonts/charter_bold_italic-webfont.ttf') format('truetype');
     font-style: italic;
     font-weight: bold;
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face {
@@ -57,7 +57,7 @@
          url('{{ .Site.BaseURL }}fonts/FiraSans-Book.woff2') format('woff2'),
          url('{{ .Site.BaseURL }}fonts/FiraSans-Book.woff') format('woff'),
          url('{{ .Site.BaseURL }}fonts/FiraSans-Book.ttf') format('truetype');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face {
@@ -68,5 +68,5 @@
          url('{{ .Site.BaseURL }}fonts/FiraSans-Bold.woff') format('woff'),
          url('{{ .Site.BaseURL }}fonts/FiraSans-Bold.ttf') format('truetype');
     font-weight: bold;
-    font-display: optional;
+    font-display: fallback;
 }
