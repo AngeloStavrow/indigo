@@ -5,7 +5,7 @@
     <div id="sitelogo">
         <a class="glyph" alt="Home" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}images/site-logo.svg" alt="Site Logo" height="64px" width="64px"></a>
     </div>
-    <header>        
+    <header>
         {{ partial "pagenav.html" . }}
         {{ if not .IsPage }}
         <div id="site-header">
