@@ -221,7 +221,7 @@ blockquote {
 code {
     background-color: #dee5e9;
     color: #00416a;
-    font-family: "Fira Code", Helvetica, Arial, monospace;
+    font-family: "Fira Code", "Courier New", Courier, monospace;
     padding: 0.1em 0.2em 0.1em 0.2em;
 }
 
