@@ -103,6 +103,10 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 0.15em;
 }
 
+h1 {
+    font-size: 2em;
+}
+
 a {
     color: #00416a;
 }
