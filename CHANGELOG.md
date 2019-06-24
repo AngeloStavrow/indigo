@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-##[1.0.6]
+## [1.0.6]
 ### Fixed
 - Fixed some copy/paste errors in CSS `font-family` definitions per [#38](https://github.com/AngeloStavrow/indigo/issues/38)
 - Fixes `<h1>` font-sizing per [#41](https://github.com/AngeloStavrow/indigo/issues/41)
