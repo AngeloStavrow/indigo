@@ -5,7 +5,7 @@
 body {
     background-color: #f8f8f8;
     color: #3f3f3f;
-    font-family: 'Charter', Fallback, serif;
+    font-family: "Charter", Times, "Times New Roman", serif;
     margin: 0 auto;
 }
 
@@ -96,11 +96,15 @@ body {
     background-color: #f8f8f8;
 }
 
-h1, h2, h3 {
-    font-family: 'Fira Sans', Fallback, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
     font-weight: bold;
     margin-top: 2em;
     padding-top: 0.15em;
+}
+
+h1 {
+    font-size: 2em;
 }
 
 a {
@@ -135,7 +139,7 @@ h2.list-title > a:hover {
 }
 
 a.read-more {
-    font-family: 'Fira Sans';
+    font-family: "Fira Sans";
     font-size: smaller;
     text-transform: uppercase;
 }
@@ -147,7 +151,7 @@ section.content {
 p.post-date {
     background-color: #00416a;
     color: #dee5e9;
-    font-family: 'Fira Sans', Fallback, sans-serif;
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
     font-size: smaller;
     margin: 0 0 2.5em 0;
     padding: 0.25em 0.5em;
@@ -164,7 +168,7 @@ h2.list-title {
 }
 
 p.list-post-date {
-    font-family: 'Fira Sans', Fallback, sans-serif;
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
     font-size: smaller;
     margin: 1em 0 1.5em 0;
     padding: 0;
@@ -176,7 +180,7 @@ p.list-post-date {
 }
 
 .copyright {
-    font-family: 'Fira Sans', Fallback, sans-serif;
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
     font-size: smaller;
     margin-top: 2em;
     text-align: center;
@@ -203,7 +207,7 @@ img.u-photo {
 }
 
 .card-subhead {
-    font-family: 'Fira Sans', Fallback, sans-serif;
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
     font-size: smaller;
     text-transform: uppercase;
 }
@@ -221,7 +225,7 @@ blockquote {
 code {
     background-color: #dee5e9;
     color: #00416a;
-    font-family: 'Fira Code', Fallback, monospace;
+    font-family: "Fira Code", "Courier New", Courier, monospace;
     padding: 0.1em 0.2em 0.1em 0.2em;
 }
 
@@ -252,7 +256,7 @@ a.permalink {
 }
 
 .post-tag {
-    font-family: 'Fira Sans', Fallback, sans-serif;
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
     font-size: small;
     text-transform: uppercase;
 }
@@ -288,7 +292,7 @@ div#site-header > p {
 }
 
 div#page-nav, #pagination {
-    font-family: 'Fira Sans', Fallback, sans-serif;
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
     font-size: smaller;
     line-height: 1em;
     margin: 1.5em 0 2.5em 0;
@@ -382,7 +386,7 @@ nav#article-skip {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    font-family: 'Fira Sans', Fallback, sans-serif;
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
     font-size: smaller;
     justify-content: space-around;
     line-height: 1em;
