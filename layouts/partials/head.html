@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <!-- Site details -->
-    <title>{{ .Title }}</title>
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta name="author" content="{{ .Site.Params.AuthorName }}">
     <!-- Favicon details -->
