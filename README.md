@@ -46,6 +46,12 @@ Or, if you use `config.yaml`:
 theme: indigo
 ```
 
+## Indigo IndieWeb Features
+
+A thorough writeup of the theme has been graciously written by @infominer33.
+
+* [Indigo IndieWeb Features](https://web-work.tools/indieweb/indigo-indieweb-features/)
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://github.com/AngeloStavrow/indigo/blob/master/CONTRIBUTING.md) for details on the code of conduct, and the process for submitting pull requests.
