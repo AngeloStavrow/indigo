@@ -46,11 +46,11 @@ Or, if you use `config.yaml`:
 theme: indigo
 ```
 
-## Indigo Indieweb Features
+## Indigo IndieWeb Features
 
 A thorough writeup of the theme has been graciously written by @infominer33.
 
-* [Indigo Indieweb Features](https://web-work.tools/indieweb/indigo-indieweb-features/)
+* [Indigo IndieWeb Features](https://web-work.tools/indieweb/indigo-indieweb-features/)
 
 ## Contributing
 
