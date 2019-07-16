@@ -27,6 +27,28 @@
         <section class="content e-content">
             {{ .Content }}
         </section>
+        <script>
+            function injectcomments(data) {
+                var i;
+                for (i = 0; i < data.links.length; i++) {
+                    var date = new Date(data.links[i].data.published);
+                    document.getElementById('comments').innerHTML += `<div class="comment"><span class="comment-author"><img src="${data.links[i].data.author.photo}" class="comment-author-avatar"></img><a class="comment-author-name" href="${data.links[i].data.author.url}">${data.links[i].data.author.name}</a><p class="comment-time"><a href="${data.links[i].data.url}">replied</a> at ${date.toLocaleString("en-US")}:</p><div class="comment-content">${data.links[i].data.content}</div></div>`;
+                }
+            }
+            $(function(){
+                $.getJSON("https://webmention.io/api/mentions?jsonp=?", {
+                    target: '{{ .Permalink }}',
+                    "wm-property": "in-reply-to"
+                }, injectcomments);
+            });
+        </script>
+        <form method="post" action="https://webmention.io/fireburn.ru/webmention">
+            <p>Have you published a response to this? <label for="webmention-source">Let me know the <abbr title="Uniform Resource Locator">URL</abbr></label>:</p>
+            <input type="url" name="source" id="webmention-source">
+            <input type="hidden" name="target" value="{{ .Permalink }}">
+            <button type="submit">Ping!</button>
+        </form>
+        <div id="comments">          </div>
         <footer>
             <a class="permalink u-url" href="{{ .Permalink }}">{{ .Site.Params.PermalinkText }}</a>
             {{ if .Params.tags }}
