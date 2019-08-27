@@ -3,7 +3,7 @@
 
 <!-- Content goes here -->
 <div id="content">
-{{ range $index, $page := (.Paginate (where (where .Data.Pages "Type" "post") ".Params.hidden" "!=" "true" )).Pages }}
+{{ range $index, $page := (.Paginate (where (where .Site.RegularPages "Type" "post") ".Params.hidden" "!=" "true" )).Pages }}
 {{ if ne $index 0 }}
 {{ end }}
 {{ .Render "li" }}
