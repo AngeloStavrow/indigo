@@ -5,11 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- Breaking changes in 0.57 per [#52](https://github.com/AngeloStavrow/indigo/issues/41)
 
 ## [1.0.6]
 ### Fixed
 - Fixed some copy/paste errors in CSS `font-family` definitions per [#38](https://github.com/AngeloStavrow/indigo/issues/38)
-- Fixes `<h1>` font-sizing per [#41](https://github.com/AngeloStavrow/indigo/issues/41)
+- Fixed `<h1>` font-sizing per [#41](https://github.com/AngeloStavrow/indigo/issues/41)
 
 ## [1.0.5]
 ### Fixed
