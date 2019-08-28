@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.1.0]
+### Changed
+- Metadata now shows page title and description per [#50](https://github.com/AngeloStavrow/indigo/issues/50), thanks to [@infominer33](https://github.com/infominer33)!
+
 ### Fixed
 - Breaking changes in article lists introduced in Hugo 0.57 per [#52](https://github.com/AngeloStavrow/indigo/issues/52)
 - Newer/Older links in article footers now work as expected in Hugo 0.50 and later per [#54](https://github.com/AngeloStavrow/indigo/issues/54)
@@ -52,7 +57,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - The first public release of the indigo theme for Hugo, along with related project documentation (including this changelog).
 
-[Unreleased]: https://github.com/AngeloStavrow/indigo/compare/v1.0.6...HEAD
+[Unreleased]: https://github.com/AngeloStavrow/indigo/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/AngeloStavrow/indigo/compare/v1.0.6...v1.1.0
 [1.0.6]: https://github.com/AngeloStavrow/indigo/compare/v1.0.5...v1.0.6
 [1.0.5]: https://github.com/AngeloStavrow/indigo/compare/v1.0.4...v1.0.5
 [1.0.4]: https://github.com/AngeloStavrow/indigo/compare/v1.0.3...v1.0.4
