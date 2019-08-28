@@ -6,7 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Fixed
-- Breaking changes in 0.57 per [#52](https://github.com/AngeloStavrow/indigo/issues/52)
+- Breaking changes in article lists introduced in Hugo 0.57 per [#52](https://github.com/AngeloStavrow/indigo/issues/52)
+- Newer/Older links in article footers now work as expected in Hugo 0.50 and later per [#54](https://github.com/AngeloStavrow/indigo/issues/54)
 
 ## [1.0.6]
 ### Fixed
