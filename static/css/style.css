@@ -404,11 +404,11 @@ nav#article-skip {
 }
 
 .next {
-    text-align: right;
+    text-align: left;
 }
 
 .prev {
-    text-align: left;
+    text-align: right;
 }
 
 .top {

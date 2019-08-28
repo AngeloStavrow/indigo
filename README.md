@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Some portions of the templates use variable rewriting, introduced in Hugo 0.48, so you'll need to make sure you're running at least this version. You can check what version you're running with
+This theme is built and tested against the latest version of Hugo and currently requires a minimum version of 0.50. You can check what version you're running with
 
 ```
 $ hugo version
