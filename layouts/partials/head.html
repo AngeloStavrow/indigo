@@ -1,8 +1,8 @@
 <head>
     <meta charset="utf-8">
     <!-- Site details -->
-    <title>{{ .Site.Title }}</title>
-    <meta name="description" content="{{ .Site.Params.Description }}">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta name="author" content="{{ .Site.Params.AuthorName }}">
     <!-- Favicon details -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
