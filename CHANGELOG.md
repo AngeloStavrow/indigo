@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Fixed
-- Breaking changes in 0.57 per [#52](https://github.com/AngeloStavrow/indigo/issues/41)
+- Breaking changes in 0.57 per [#52](https://github.com/AngeloStavrow/indigo/issues/52)
 
 ## [1.0.6]
 ### Fixed
