@@ -14,11 +14,11 @@
     </div>
     {{ end }}
     <div id="footer">
-      {{ if or (.Prev) (.Next) }}
+      {{ if or (.NextPage) (.PrevPage) }}
       <nav id="article-skip">
-        <div class="prev">
-          {{ if and (.Prev) (not .Params.Menu) }}
-          <a alt="Newer article" href="{{ .Prev.Permalink }}">&larr; Newer</a>
+        <div class="next">
+          {{ if and (.NextPage) (not .Params.Menu) }}
+          <a alt="Newer article" href="{{ .NextPage.Permalink }}">&larr; Newer</a>
           {{ else }}
           <p>&nbsp;</p>
           {{ end }}
@@ -26,9 +26,9 @@
         <div class="top">
           <a alt="Top of page" href="#">Top</a>
         </div>
-        <div class="next">
-          {{ if and (.Next) (not .Params.Menu) }}
-          <a alt="Older article" href="{{ .Next.Permalink }}">Older &rarr;</a>
+        <div class="prev">
+          {{ if and (.PrevPage) (not .Params.Menu) }}
+          <a alt="Older article" href="{{ .PrevPage.Permalink }}">Older &rarr;</a>
           {{ else }}
           <p>&nbsp;</p>
           {{ end }}
