@@ -32,6 +32,10 @@ Set up the parameters in the config file, especially those in the social and `pa
 
 You can configure the theme to show info about the author; by default, this information is shown; if you'd prefer to leave it out, set `ShowBio` to `false`.
 
+### Customization
+
+Indigo will look for custom CSS in `<YOUR_HUGO_SITE>/static/css/custom.css`. This will let you add/override styling to your heart's content, while making it easy to keep Indigo up-to-date. See it in action on [angelostavrow.com](https://angelostavrow.com).
+
 ## Deployment
 
 You can add a line to your `config.toml` file to set this theme as the default:
