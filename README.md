@@ -58,7 +58,7 @@ A thorough writeup of the theme has been graciously written by @infominer33.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/AngeloStavrow/indigo/blob/master/CONTRIBUTING.md) for details on the code of conduct, and the process for submitting pull requests.
+Please read [CONTRIBUTING.md](https://github.com/AngeloStavrow/indigo/blob/master/CONTRIBUTING.md) for details on the code of conduct, and the process for submitting bug reports, feature requests, and having your changes merged into the project.
 
 ## Versioning
 
