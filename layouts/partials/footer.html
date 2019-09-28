@@ -1,7 +1,7 @@
 <!-- Footer content -->
     {{ if .Site.Params.ShowBio }}
     <div class="h-card">
-      <img class="u-photo" src="{{ .Site.BaseURL }}{{ .Site.Params.Avatar }}" />
+      <img class="u-photo" src="{{ .Site.Params.Avatar | absURL }}" />
       <div class="card-content">
         <h2 class="card-name"><a class="p-name u-url" href="{{ .Site.BaseURL }}" rel="me">{{ .Site.Params.Author }}</a></h2>
         <p class="card-subhead">
