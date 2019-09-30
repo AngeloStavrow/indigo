@@ -28,7 +28,7 @@ https://github.com/AngeloStavrow/indigo.git
 
 There's a sample config.toml file in the root of the indigo theme directory (`config.toml.example`); copy it to the root of your Hugo site, and rename it to `config.toml` _after_ you've made a backup of your current config.toml file (if any).
 
-Set up the parameters in the config file, especially those in the social and `params.indieWeb` section. Social identifiers that you leave out will not be added to the footer of the site. If you prefer to use a content type other than `post`, be sure to change the `mainSections` parameter in the config file as well. For example, if you want content of type `posts` and `updates` to show up in lists, change the `mainSections` parameter to:
+Set up the parameters in the config file, especially those in the social and `params.indieWeb` section. Social identifiers that you leave out will not be added to the footer of the site. If you prefer to use a content type other than `post`, be sure to change the `mainSections` parameter in the config file as well. For example, if you want content of type `posts` and `updates` to show up in lists:
 
 ```toml
 [params]
