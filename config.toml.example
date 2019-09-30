@@ -12,6 +12,7 @@ theme = "indigo"
   Biography = "A short description, a few sentences describing the author. Set the 'ShowBio' parameter to false to hide this."
   ShowBio = true
   PermalinkText = "🔗"
+  mainSections = ["post"]
 
   # Contact/social-network identifiers for social icons
   EmailAddress = "email.address@example.com"
