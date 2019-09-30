@@ -5,11 +5,11 @@
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta name="author" content="{{ .Site.Params.AuthorName }}">
     <!-- Favicon details -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00416a">
+    <link rel="apple-touch-icon" sizes="180x180" href={{ "apple-touch-icon.png" | absURL }}>
+    <link rel="icon" type="image/png" sizes="32x32" href={{ "favicon-32x32.png" | absURL }}>
+    <link rel="icon" type="image/png" sizes="16x16" href={{ "favicon-16x16.png" | absURL }}>
+    <link rel="manifest" href={{ "site.webmanifest" | absURL }}>
+    <link rel="mask-icon" href={{ "safari-pinned-tab.svg" | absURL }} color="#00416a">
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
     <!-- IndieWeb identity -->
@@ -20,10 +20,10 @@
     <!-- IndieAuth endpoint -->
     <link rel="authorization_endpoint" href="https://indieauth.com/auth">
     <!-- Other stuff to make the site work -->
-    <link rel="stylesheet" href="/css/fonts.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    {{ if (fileExists "/static/css/custom.css") -}}
-    <link rel="stylesheet" href="/css/custom.css" />
+    <link rel="stylesheet" href={{ "css/fonts.css" | absURL }} />
+    <link rel="stylesheet" href={{ "css/style.css" | absURL }} />
+    {{ if (fileExists "static/css/custom.css") -}}
+    <link rel="stylesheet" href={{ "css/custom.css" | absURL }} />
     {{- end }}
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>

@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-This theme is built and tested against the latest version of Hugo and currently requires a minimum version of 0.50. You can check what version you're running with
+This theme is built and tested against the latest version of Hugo and currently requires a minimum version of 0.58. You can check what version you're running with
 
 ```
 $ hugo version
@@ -28,7 +28,13 @@ https://github.com/AngeloStavrow/indigo.git
 
 There's a sample config.toml file in the root of the indigo theme directory (`config.toml.example`); copy it to the root of your Hugo site, and rename it to `config.toml` _after_ you've made a backup of your current config.toml file (if any).
 
-Set up the parameters in the config file, especially those in the social and `params.indieWeb` section. Social identifiers that you leave out will not be added to the footer of the site.
+Set up the parameters in the config file, especially those in the social and `params.indieWeb` section. Social identifiers that you leave out will not be added to the footer of the site. If you prefer to use a content type other than `post`, be sure to change the `mainSections` parameter in the config file as well. For example, if you want content of type `posts` and `updates` to show up in lists:
+
+```toml
+[params]
+  ...
+  mainSections = ["posts", "updates"]
+```
 
 You can configure the theme to show info about the author; by default, this information is shown; if you'd prefer to leave it out, set `ShowBio` to `false`.
 
@@ -40,13 +46,13 @@ Indigo will look for custom CSS in `<YOUR_HUGO_SITE>/static/css/custom.css`. Thi
 
 You can add a line to your `config.toml` file to set this theme as the default:
 
-```
+```toml
 theme = "indigo"
 ```
 
 Or, if you use `config.yaml`:
 
-```
+```yaml
 theme: indigo
 ```
 
@@ -58,7 +64,7 @@ A thorough writeup of the theme has been graciously written by @infominer33.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/AngeloStavrow/indigo/blob/master/CONTRIBUTING.md) for details on the code of conduct, and the process for submitting pull requests.
+Please read [CONTRIBUTING.md](https://github.com/AngeloStavrow/indigo/blob/master/CONTRIBUTING.md) for details on the code of conduct, and the process for submitting bug reports, feature requests, and having your changes merged into the project.
 
 ## Versioning
 

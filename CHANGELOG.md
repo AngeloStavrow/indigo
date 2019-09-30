@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+<!-- ## [Unreleased] -->
+## [1.3.0]
+### Added
+- Adds a `mainSection` configuration parameter to set preferred content name per [#56](https://github.com/AngeloStavrow/indigo/issues/56)
+
+### Changed
+- Updated **CONTRIBUTING.md** to reflect new contributions process per [#28](https://github.com/AngeloStavrow/indigo/issues/28)
+- Bumped the minimum Hugo version requirement to 0.58 to account for [#52](https://github.com/AngeloStavrow/indigo/issues/52)
+
+### Fixed
+- As part of an audit of the theme's code per [#57](https://github.com/AngeloStavrow/indigo/issues/57)
+  - Removed forward slashes (`/`) in URLs for better compatibility with sites that don't live at a domain root
+  - Fixed the location from which the theme's fonts are loaded
+
+### Removed
+- GitHub issue and pull request templates removed from the repo per [#28](https://github.com/AngeloStavrow/indigo/issues/28)
+
 ## [1.2.0]
 ### Added
 - You can now import custom CSS from `<YOUR_HUGO_SITE>/static/css/custom.css` per [#48](https://github.com/AngeloStavrow/indigo/issues/48)
@@ -59,7 +76,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - The first public release of the indigo theme for Hugo, along with related project documentation (including this changelog).
 
-<!-- [Unreleased]: https://github.com/AngeloStavrow/indigo/compare/v1.1.0...HEAD -->
+<!-- [Unreleased]: https://github.com/AngeloStavrow/indigo/compare/v1.3.0...HEAD -->
+[1.3.0]: https://github.com/AngeloStavrow/indigo/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/AngeloStavrow/indigo/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/AngeloStavrow/indigo/compare/v1.0.6...v1.1.0
 [1.0.6]: https://github.com/AngeloStavrow/indigo/compare/v1.0.5...v1.0.6
