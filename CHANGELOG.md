@@ -7,13 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- ## [Unreleased] -->
 
-## [1.3.1]
+## [1.3.1] - 2019-10-03
 
 ### Fixed
 
 - Taxonomy-based lists (e.g., lists of tags or categories) now only show posts within the selected taxonomy per [#65](https://github.com/AngeloStavrow/indigo/issues/56)
 
-## [1.3.0]
+## [1.3.0] - 2019-09-30
 
 ### Added
 
@@ -34,13 +34,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - GitHub issue and pull request templates removed from the repo per [#28](https://github.com/AngeloStavrow/indigo/issues/28)
 
-## [1.2.0]
+## [1.2.0] - 2019-08-31
 
 ### Added
 
 - You can now import custom CSS from `<YOUR_HUGO_SITE>/static/css/custom.css` per [#48](https://github.com/AngeloStavrow/indigo/issues/48)
 
-## [1.1.0]
+## [1.1.0] - 2019-08-28
 
 ### Changed
 
@@ -51,20 +51,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Breaking changes in article lists introduced in Hugo 0.57 per [#52](https://github.com/AngeloStavrow/indigo/issues/52)
 - Newer/Older links in article footers now work as expected in Hugo 0.50 and later per [#54](https://github.com/AngeloStavrow/indigo/issues/54)
 
-## [1.0.6]
+## [1.0.6] - 2019-06-24
 
 ### Fixed
 
 - Fixed some copy/paste errors in CSS `font-family` definitions per [#38](https://github.com/AngeloStavrow/indigo/issues/38)
 - Fixed `<h1>` font-sizing per [#41](https://github.com/AngeloStavrow/indigo/issues/41)
 
-## [1.0.5]
+## [1.0.5] - 2019-06-05
 
 ### Fixed
 
 - Cleaned up some errant whitespace thanks to [@dixonge](https://github.com/dixonge)!
 
-## [1.0.4]
+## [1.0.4] - 2019-10-25
 
 ### Added
 
@@ -80,7 +80,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix for broken content div in 404.html ([#21](https://github.com/AngeloStavrow/indigo/issues/21))
 - The `src` URL for the site logo had an extra `/`, and now it doesn't, thanks to [@michimani](https://github.com/michimani)!
 
-## [1.0.3]
+## [1.0.3] - 2019-10-21
 
 ### Added
 
@@ -92,7 +92,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Custom fonts are now loaded correctly, hopefully speeding up rendering ([#23](https://github.com/AngeloStavrow/indigo/issues/23))
 - The site expected fonts to load from the site root, even if your site was installed to a subdirectory. Now they don't. ([#27](https://github.com/AngeloStavrow/indigo/issues/27))
 
-## [1.0.2]
+## [1.0.2] - 2019-10-15
 
 ### Fixed
 
