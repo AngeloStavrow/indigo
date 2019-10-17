@@ -7,11 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- ## [Unreleased] -->
 
+## [1.3.2] - 2019-10-17
+
+### Added
+
+- A _Support and Maintenance_ section has been added to the README, per [#64](https://github.com/AngeloStavrow/indigo/issues/64)
+
+### Changed
+
+- Updated the Hugo minimum version to 0.58.3
+
 ## [1.3.1] - 2019-10-03
 
 ### Fixed
 
-- Taxonomy-based lists (e.g., lists of tags or categories) now only show posts within the selected taxonomy per [#65](https://github.com/AngeloStavrow/indigo/issues/56)
+- Taxonomy-based lists (e.g., lists of tags or categories) now only show posts within the selected taxonomy per [#56](https://github.com/AngeloStavrow/indigo/issues/56)
 
 ## [1.3.0] - 2019-09-30
 
@@ -113,6 +123,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- [Unreleased]: https://github.com/AngeloStavrow/indigo/compare/v1.3.0...HEAD -->
 
+[1.3.2]: https://github.com/AngeloStavrow/indigo/compare/v1.3.1...v1.3.2
 [1.3.1]: https://github.com/AngeloStavrow/indigo/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/AngeloStavrow/indigo/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/AngeloStavrow/indigo/compare/v1.1.0...v1.2.0
