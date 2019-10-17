@@ -8,7 +8,7 @@ description = "An IndieWeb-enabled, lightweight blogging theme for Hugo."
 homepage = "https://github.com/AngeloStavrow/indigo"
 tags = ["blog", "responsive", "minimal"]
 features = ["indieweb", "blog"]
-min_version = "0.58"
+min_version = "0.58.3"
 
 [author]
   name = "Angelo Stavrow"
