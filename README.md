@@ -18,7 +18,7 @@ Follow the [upgrade instructions on the Hugo website](https://gohugo.io/getting-
 
 ### Installing
 
-Follow the [theme-installation instructions on the Hugo website](https://gohugo.io/themes/installing-and-using-themes/#install-a-single-theme); the URL you'll want to use is
+Follow the [Hugo Quickstart](https://gohugo.io/getting-started/quick-start/)'s instructions on how to add a theme; the URL you'll want to use is
 
 ```
 https://github.com/AngeloStavrow/indigo.git
