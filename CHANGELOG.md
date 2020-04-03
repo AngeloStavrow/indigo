@@ -6,8 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
 ### Added
-- Added entrypoints config section as described in [#73](https://github.com/AngeloStavrow/indigo/issues/73)
+
+- Added entrypoints config section as described in [#73](https://github.com/AngeloStavrow/indigo/issues/73), thanks to [@kasuboski](https://github.com/kasuboski)!
+
+### Fixed
+
+- Partial for Facebook social link now actually points to your Facebook profile as described in [#76](https://github.com/AngeloStavrow/indigo/issues/76), thanks to [@j-wang](https://github.com/j-wang)!
 
 ## [1.3.2] - 2019-10-17
 
