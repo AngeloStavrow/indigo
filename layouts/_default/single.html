@@ -2,21 +2,22 @@
 {{ $baseurl := .Site.BaseURL | sanitizeurl }}
 {{ $author := .Site.Params.Author }}
 {{ if .Params.Author }}
-    {{ $author = .Params.Author }}
+{{ $author = .Params.Author }}
 {{ end }}
 <div id="content">
     <article class="h-entry">
         <header>
             <h1 class="post-title p-name">{{ .Title }}</h1>
-            {{ if not .Params.Menu }}
+            {{ if .Params.Date }}
             <p class="post-date">Posted on
                 <time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-                {{ .PublishDate.Format "2 January, 2006 at 15:04 MST" }}
-                </time> {{ if $author }} by <a href="{{ .Site.BaseURL }}" class="p-author h-card" rel="author">{{ $author }}</a>{{ end }}
+                    {{ .PublishDate.Format "2 January, 2006 at 15:04 MST" }}
+                </time> {{ if $author }} by <a href="{{ .Site.BaseURL }}" class="p-author h-card"
+                    rel="author">{{ $author }}</a>{{ end }}
             </p>
             {{ end }}
             {{ if .Params.categories }}
-            <p class="post-tag">Category: 
+            <p class="post-tag">Category:
                 {{ range .Params.categories }}
                 <a href="{{ $baseurl }}/categories/{{ . | urlize }}" class="post-tag p-category">{{ . }}</a>
                 {{ end }}
@@ -31,10 +32,10 @@
             <a class="permalink u-url" href="{{ .Permalink }}">{{ .Site.Params.PermalinkText }}</a>
             {{ if .Params.tags }}
             <hr class="post-underline">
-            <p class="post-tag">Tags for this post: 
-            {{ range .Params.tags }}
+            <p class="post-tag">Tags for this post:
+                {{ range .Params.tags }}
                 <a href="{{ $baseurl }}/tags/{{ . | urlize }}" class="post-tag p-category">{{ . }}</a>
-            {{ end }}
+                {{ end }}
             </p>
             {{ end }}
         </footer>
