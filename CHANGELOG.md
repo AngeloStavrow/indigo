@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Partial for Facebook social link now actually points to your Facebook profile as described in [#76](https://github.com/AngeloStavrow/indigo/issues/76), thanks to [@j-wang](https://github.com/j-wang)!
+- The date is no longer shown on pages that have no date parameter in their front matter, per [#84](https://github.com/AngeloStavrow/indigo/issues/84)
 
 ## [1.3.2] - 2019-10-17
 
