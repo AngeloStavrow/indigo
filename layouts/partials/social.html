@@ -70,5 +70,11 @@
       <a class="glyph" alt="Twitter profile" href="https://twitter.com/{{ .Site.Params.TwitterUser }}"><img src={{ "icons/twitter.svg" | absURL }} height="24px" width="24px"></a>
      </div>
      {{ end }}
+    {{ if isset .Site.Params "instagramuser" }}
+    <div class="icon-24x24">
+      <a class="glyph" alt="Instagram profile" href="https://instagram.com/{{ .Site.Params.TwitterUser }}"><img
+          src={{ "icons/instagram.svg" | absURL }} height="24px" width="24px"></a>
+    </div>
+    {{ end }}
   </div>
 </aside>
