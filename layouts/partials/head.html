@@ -26,6 +26,10 @@
     <link rel="microsub" href="{{ . }}" />{{ end }}
     {{ with .Site.Params.endpoints.Webmention}}
     <link rel="webmention" href="{{ . }}" />{{ end }}
+    {{ with .Site.Params.paymentPointer }}
+    <!-- Web Monetization payment pointer -->
+    <meta name="monetization" content={{ . }}>
+    {{ end }}
     <!-- Other stuff to make the site work -->
     <link rel="stylesheet" href={{ "css/fonts.css" | absURL }} />
     <link rel="stylesheet" href={{ "css/style.css" | absURL }} />

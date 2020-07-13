@@ -13,6 +13,8 @@ theme = "indigo"
   ShowBio = true
   PermalinkText = "🔗"
   mainSections = ["post"]
+  # Web Monetization only works on secure pages served over HTTPS.
+  paymentPointer = ""
 
   # Contact/social-network identifiers for social icons
   EmailAddress = "email.address@example.com"
