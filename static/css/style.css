@@ -229,19 +229,18 @@ blockquote {
 }
 
 code {
-  background-color: #dee5e9;
-  color: #00416a;
   font-family: "Fira Code", "Courier New", Courier, monospace;
   padding: 0.1em 0.2em 0.1em 0.2em;
 }
 
 pre {
-  background-color: #dee5e9;
+  background-color: #00416a;
   border: 1px solid #ccc;
   border-radius: 5px;
+  color: #dee5e9;
   font-size: 0.8em;
   margin: 2em auto;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding: 1em;
   width: 100%;
 }
