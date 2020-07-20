@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Improved legibility of code blocks when using language-specific backticks or Hugo's [highlight shortcode](https://github.com/AngeloStavrow/indigo/issues/89), per [#89](https://github.com/AngeloStavrow/indigo/issues/89).
+- Images that have height and width set in the `<img>` tag now don't get stretched beyond their original size, and their aspect ratio is respected, per [#81](https://github.com/AngeloStavrow/indigo/issues/81).
 
 ## [1.4.0] - 2020-07-13
 
