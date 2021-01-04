@@ -6,8 +6,8 @@
         <h2 class="card-name"><a class="p-name u-url" href="{{ .Site.BaseURL }}" rel="me">{{ .Site.Params.Author }}</a></h2>
         <p class="card-subhead">
           <span class="p-locality">{{ .Site.Params.IndieWeb.City }}</span>,
-          <span class="p-country-name">{{ .Site.Params.IndieWeb.Country }}</span><br />
-          <a class="u-email" href="mailto:{{ .Site.Params.IndieWeb.EmailAddress }}">Email me</a>
+          <span class="p-country-name">{{ .Site.Params.IndieWeb.Country }}</span>
+          {{ with .Site.Params.IndieWeb.EmailAddress }}<br /><a class="u-email" href="mailto:{{.}}">Email me</a>{{end}}
         </p>
       </div>
       <p class="p-note">{{ .Site.Params.Biography }}</p>
