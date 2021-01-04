@@ -36,7 +36,7 @@
       </nav>
       {{ end }}
       {{ partial "social.html" . }}
-      {{ with .Site.Copyright }}
+      {{ with .Site.Copyright | safeHTML }}
       <p class="copyright">
           {{ . }}
       </p>
