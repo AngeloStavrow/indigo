@@ -3,7 +3,11 @@
 {{ partial "head.html" . }}
 <body>
     <div id="sitelogo">
-        <a class="glyph" alt="Home" href="{{ .Site.BaseURL }}"><img src={{ "images/site-logo.svg" | absURL }} alt="Site Logo" height="64px" width="64px"></a>
+    {{ $sitelogo := "images/site-logo.svg" }}
+    {{ if .Site.Params.SiteLogo }}
+    {{ $sitelogo = .Site.Params.SiteLogo }}
+    {{ end }}
+    <a class="glyph" alt="Home" href="{{ .Site.BaseURL }}"><img src="{{ $sitelogo | absURL }}" alt="Site Logo" height="64px" width="64px"></a>
     </div>
     <header>
         {{ partial "pagenav.html" . }}

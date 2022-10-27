@@ -42,6 +42,14 @@ You can configure the theme to show info about the author; by default, this info
 
 Indigo will look for custom CSS in `<YOUR_HUGO_SITE>/static/css/custom.css`. This will let you add/override styling to your heart's content, while making it easy to keep Indigo up-to-date. See it in action on [angelostavrow.com](https://angelostavrow.com).
 
+You can override the default indigo site logo by setting the `SiteLogo` parameter:
+
+```toml
+[params]
+  ...
+  SiteLogo = "images/my-site-logo.png"
+```
+
 ## Deployment
 
 You can add a line to your `config.toml` file to set this theme as the default:
