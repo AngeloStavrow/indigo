@@ -9,6 +9,7 @@ theme = "indigo"
   Description = "Description of website for head meta tag"
   Subtitle = "A subtitle for your site"
   Avatar = "images/site-logo.svg"
+  # SiteLogo = "images/site-logo.svg"
   Biography = "A short description, a few sentences describing the author. Set the 'ShowBio' parameter to false to hide this."
   ShowBio = true
   PermalinkText = "🔗"
